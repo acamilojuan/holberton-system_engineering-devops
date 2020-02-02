@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lRa --ignore=. --ignore=.. | wc -l
+ls -AR | wc -l
