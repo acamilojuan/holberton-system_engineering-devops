@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -S | find -type f -name "*.gif" | cut -d "." -f 1 | rev | cut -d "/" -f 1 | rev
+ls -S | find -name "*.gif" -type f | cut -d "." -f 1 | rev | cut -d "/" -f 1 | rev
