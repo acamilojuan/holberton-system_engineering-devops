@@ -1,2 +1,2 @@
 #!/bin/bash
-export BINARY=base#number | echo "$BINARY; obase=number" | bc
+export BINARY="10100111001" | echo $((2#$BINARY))
