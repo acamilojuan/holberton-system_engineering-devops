@@ -1,2 +1,2 @@
 #!/bin/bash
-export DECIMAL="F" | echo $((10#$DECIMAL))
+export DECIMAL="f" | echo $((10#$DECIMAL))
