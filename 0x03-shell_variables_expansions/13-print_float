@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%1.2f\n" "$a"
+export NUM="3.14159265359" | printf "%1.2f\n" "$a"
