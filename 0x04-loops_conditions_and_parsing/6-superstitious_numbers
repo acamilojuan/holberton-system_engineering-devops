@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This script is displaying numbers from 1 to 20
-# and change output in some positions
+# and change output in some positions.
 
 i=1
 while [ $i -lt 21 ]; do
