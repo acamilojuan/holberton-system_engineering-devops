@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times with while loop
+# This script is displaying "Holberton School" 10 times with until loop
 
 LIST='Holberton School'
 i=0
