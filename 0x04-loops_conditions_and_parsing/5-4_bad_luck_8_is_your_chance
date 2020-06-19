@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times with while loop 
+# and change output in some positions
+
+LIST="Holberton School"
+i=0
+while ((i<10)); do 
+	((i++))
+	if [ $i = 4 ]; 
+	then 
+		echo "bad luck"
+	elif [ $i = 8 ];
+	then 
+		echo "good luck"
+	else
+		echo "$LIST"
+	fi
+done
