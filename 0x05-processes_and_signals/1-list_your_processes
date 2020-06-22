@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times
+# This is a Bash script that displays a list of currently running processes
 
-ps -aux | less
+ps -au | less
