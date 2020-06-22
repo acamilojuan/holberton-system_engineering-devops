@@ -3,8 +3,8 @@
 # along with the process name, of processes whose name contain the word bash
 
 str="To infinity and beyond"
-i=1
-while ((i>0)); do echo "$str"
+i=0
+while ((i>=0)); do echo "$str"
 	((i++))
 	sleep 2
 done
