@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This is a Bash script that displays lines containing the bash word
 
-ps aux --forest | grep bash
+ps auxf | grep bash
