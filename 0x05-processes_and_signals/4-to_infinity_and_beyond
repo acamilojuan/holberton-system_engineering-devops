@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This is a Bash script that displays the PID, 
+# along with the process name, of processes whose name contain the word bash
+
+str="To infinity and beyond"
+i=1
+while ((i>0)); do echo "$str"
+	((i++))
+	sleep 2
+done
