@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# This is a Bash script that displays the PID, 
-# along with the process name, of processes whose name contain the word bash
+# This is a Bash script that displays To infinity and beyond indefinitely
 
 str="To infinity and beyond"
 i=0
