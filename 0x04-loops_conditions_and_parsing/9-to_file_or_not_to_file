@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times with while loop 
+# and change output in some positions
+
+FILE=holbertonschool
+if test -e "$FILE"; 
+then 
+	echo "$FILE file exists"
+	if test -f "$FILE";
+	then
+		echo "$FILE is a regular file"
+	fi
+	if test -s "$FILE";
+	then
+		echo "$FILE file is not empty"
+	else
+		echo "$FILE file is empty"
+	fi
+else
+	echo "$FILE file does not exist"
+fi
