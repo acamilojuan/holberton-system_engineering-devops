@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times
+
+content="apache-access_log"
+awk '{ print $1,$9 }' "$content" | sort | uniq -c | sort -rh
