@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times with while loop 
-# and change output in some positions
+# This script is a Bash script that gives you information about the holbertonschool file
 
 FILE=holbertonschool
 if test -e "$FILE"; 
