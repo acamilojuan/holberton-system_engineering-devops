@@ -1,0 +1,5 @@
+Host 1600-web-01
+  HostName 34.75.139.167
+  User ubuntu
+  IdentityFile ~/.ssh/holberton
+  PasswordAuthentication no
