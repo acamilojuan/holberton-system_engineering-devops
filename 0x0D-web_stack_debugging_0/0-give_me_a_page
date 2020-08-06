@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 #Script to make Apache to run on the container and to return a page
 #containing Hello Holberton when querying the root of it.
-echo Hello Holberton > holbertonschool/265-0
+echo "Hello Holberton" > /var/www/html/index.html
+service apache2 restart
