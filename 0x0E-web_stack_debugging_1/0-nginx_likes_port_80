@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Bash script with the minimum number of commands to automate the fix
-sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo service nginx restart
+cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
