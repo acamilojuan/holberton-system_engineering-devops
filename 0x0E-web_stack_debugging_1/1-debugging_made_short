@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Using the past script, and making the fix short and sweet.
-sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 pgrep nginx | xargs kill -1
