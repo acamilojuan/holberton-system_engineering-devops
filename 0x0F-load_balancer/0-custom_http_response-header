@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Bash script to configure web-02 server to be identical to web-01
-apt-get update
-apt-get -y install nginx
+sudo apt-get update
+sudo apt-get -y install nginx
 sudo service nginx start
 echo "Holberton School" > /var/www/html/index.html
 path="/etc/nginx/sites-enabled/default"
