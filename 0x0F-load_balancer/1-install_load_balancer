@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
-#Bash script to configure web-02 server to be identical to web-01
-apt-get update
-apt-get -y install nginx
-sudo service nginx start
-echo "Holberton School" > /var/www/html/index.html
-path="/etc/nginx/sites-enabled/default"
-msg="\\\tadd_header X-Served-By \$hostname;"
-sudo sed -i "30i $msg" "$path"
-sudo service nginx restart
+#Bash script to Install and configure HAproxy on the lb-01 server.
+sudo apt-get -y update
+sudo apt-get install haproxy=1.6.\* -y
+sudo service haproxy start
+front_config="frontend http\n\tbind *:80\n\tmode http\n\tdefault_backend web_backend\n"
+back_config="backend web_backend\n\tbalance roundrobin\n\tmode http\n\tserver web-01 34.75.139.167:80 check\n\tserver web-02 35.231.179.116:80 check"
+sed -i "20i \\\n$front_config\n$back_config" /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
