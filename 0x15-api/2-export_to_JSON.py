@@ -14,10 +14,10 @@ if __name__ == "__main__":
     tasks_list = res.json()
     new_list = []
     dic_json = {}
-    for elem in tasks_list:
+    for task in tasks_list:
         new_dic = {}
-        new_dic['elem'] = elem.get('title')
-        new_dic['completed'] = elem.get('completed')
+        new_dic['task'] = task.get('title')
+        new_dic['completed'] = task.get('completed')
         new_dic['username'] = user_name
         new_list.append(new_dic)
     dic_json[user_id] = new_list
