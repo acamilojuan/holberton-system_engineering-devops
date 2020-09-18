@@ -13,5 +13,8 @@ def number_of_subscribers(subreddit):
         'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) \
         Gecko/20100401 Firefox/3.6.3 (FM Scene 4.6.1)'}
     res = requests.get(url, headers=headers_dict, allow_redirects=False)
-    subscribers = res.json().get('data').get('subscribers')
-    return subscribers
+    try:
+        subscribers = res.json().get('data').get('subscribers')
+        return subscribers
+    except:
+        return 0
